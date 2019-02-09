@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Everything Sports</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="./Assets/CSS/reset.css" />
+    <!-- Materialize CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />
+    <!-- JavaScript -->
+    <script src="./Assets/Javascript/javascript.js"></script>
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+      <header class="nba-header">
+          <nav  style="background-color: black">
+                  <div class="nav-wrapper" >
+                      <a id="nba-logo" class="a" style="font-size: 40px;" href="#">Everything Sports</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                          <a id="search"> 
+                              <input class="awesomplete" id=”s” type=”text” name=”s” placeholder=”Search…” style="height: 30px; margin-top:5px">                     
+                                <form id=”search-form” name=”search-form” method=”get” action=”index.html”>
+                                </form>
+                          </a>
+                  </div>
+                </nav>
+                <br>
+
+  </header>
+  <div class="container">
+  <div class="row">
+  <div class="col s8">
+
+  <div class="row">
+    <div class="col s12 m6 l6 card z-depth-2">
+  <a id="newImg2" href="nba.html">
+  <img class="responsive-img leagueImg" src="assets/images/nba.png"> 
+  <h1 class="leagueName col s12 l12 right-align">NBA</h1>
+  </a>
+  </div>  
+
+  <div class="col s12 m6 l6 card z-depth-2">
+  <a id="newImg" href="nfl.html">
+  <img class="responsive-img leagueImg" src="./Assets/images/nfl.png"> 
+  <h1 class="leagueName col s12 l12 right-align">NFL</h1>
+  </a>
+  </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12 m6 l6 card z-depth-2">        
+    <a id="newImg4" href="mlb.html">
+    <img class="responsive-img leagueImg" src="assets/images/mlb.png"> 
+    <h1 class="leagueName col s12 l12 right-align">MLB</h1>
+    </a>
+    </div>
+
+    <div class="col s12 m6 l6 card z-depth-2">
+    <a id="newImg3" href="nhl.html">  
+    <img class="responsive-img leagueImg" src="assets/images/nhl.png"> 
+    <h1 class="leagueName col s12 l12 right-align">NHL</h1>
+    </a>  
+    </div>  
+  </div>
+
+
+  <div class="row">
+      <div id="homeFeed" class="col s12 m12 l12 card z-depth-2"> 
+          <iframe id="liveStream" src="" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen> </iframe>       
+      </div>
+  </div>
+  
+
+  </div>
+
+  <img id="imgChange" class="col s4 responsive-img" src="Assets/images/download.jpg">
+
+  </div>
+
+    <script src="" async defer></script>
+
+    <script>
+     $("#newImg").hover(function(){
+      $('#imgChange').attr('src','Assets/images/download.jpg');
+      $('#liveStream').attr('src','https://livestream.com/accounts/1160789/events/2727314/player?width=500&height=260&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false');
+   });
+
+     $("#newImg2").hover(function(){
+      $('#imgChange').attr('src','Assets/images/download2.jpg');
+      $('#liveStream').attr('src','https://livestream.com/accounts/978720/events/1796119/player?width=500&height=260&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false');
+    });
+   
+   $("#newImg3").hover(function(){
+      $('#imgChange').attr('src','Assets/images/download3.jpg');
+      $('#liveStream').attr('src','https://livestream.com/accounts/1160789/events/2727314/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false');
+   });
+
+   $("#newImg4").hover(function(){
+      $('#imgChange').attr('src','Assets/images/download4.jpg');
+      $('#liveStream').attr('src','https://livestream.com/accounts/1160789/events/2727314/player?width=640&height=360&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false');
+   });
+   
+
+   </script>
+  </body>
+</html>

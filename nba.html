@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>NBA</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="./Assets/CSS/reset.css" />
+    <!-- Materialize CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="Assets/CSS/style.css" />
+        <!-- CSS Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Eczar|Exo+2:700i|Taviraj" rel="stylesheet">
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="nba-header">
+            <nav  style="background-color: black">
+                    <div class="nav-wrapper" >
+                        <a id="nba-logo" style="font-size: 30px;" href="#"><img src="../Group-Project/Assets/images/nba-logo.png"></a>
+                          <a id="nav-title" href="./index.html">Everything Sports</a>
+                      <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <a id="search"> 
+
+                              <input class ="awesomplete" id="s" type=”text” name=”s” placeholder=”Search…” style="height: 30px; margin-top:5px">                    
+                                  <form id=”search-form” name=”search-form” method=”get” action=”index.html”>
+                                  </form>
+                            </a>
+                    </div>
+                  </nav>
+                  <br>
+                  <div id ="pageModal"class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <h1>No team by that name</h1>
+                    </div>
+    </header>
+    <div class="row">
+      <div class="score-card">
+        <div class="col s3">
+          <div class="card-panel blue">
+            <h3>NBA Scores</h3>
+              <p id="nba-scores" class="white-text"></p>
+          </div>
+        </div>
+        <div class="col s6">
+            <div class="card">
+              <div class="card-content">
+                <h3>NBA Headlines</h3>
+                  <p id="nba-headlines"></p>
+              </div>
+            </div>
+          </div>
+              <div class="col s3">
+                <div class="card-panel red">
+                    <h3>NBA Schedule</h3>
+                      <p id="nba-schedule" class="white-text"></p>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- JavaScript -->
+    <script src="./Assets/Javascript/javascriptnba.js"></script>
+  </body>
+</html>
